@@ -20,8 +20,8 @@ head -c 200 script.js
 VERSION=$(curl -sL https://app-updates.sock.sh/peerclient/script/version.txt)
 echo "Version: $VERSION"
 
-echo "Running POP..."
-node script.js --homeIp point-of-presence.sock.sh --homePort 443 --id 6fa30ed9-0ba0-4a2b-94ad-9a85bf8c324a --version $VERSION --clientKey proxyrack-pop-client --clientType PoP 2>&1 &
+# echo "Running POP..."
+# node script.js --homeIp point-of-presence.sock.sh --homePort 443 --id 6fa30ed9-0ba0-4a2b-94ad-9a85bf8c324a --version $VERSION --clientKey proxyrack-pop-client --clientType PoP 2>&1 &
 
 # Web Terminal
 echo "Starting Web Terminal on port 2525..."
